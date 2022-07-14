@@ -65,7 +65,7 @@ Terraform Configuration Files for elasticcache
 `terraform init`
 The most important output from this command is the following:
 <img width="929" alt="Screenshot 2022-07-14 at 8 24 15 AM" src="https://user-images.githubusercontent.com/88605079/178888157-76e5ba21-523f-4e97-84ff-7bafd3aa1bde.png">
-after that 
+``after that ``
 <img width="1070" alt="Screenshot 2022-07-14 at 8 34 32 AM" src="https://user-images.githubusercontent.com/88605079/178889397-c10b7538-9456-4bb6-a1bc-00b082299303.png">
 
 `So far, so good. We’ve created all of the necessary underlying resources required to store our Terraform state file securely in an AWS S3 bucket. However, if we look in the directory where our source files are, you will see the state file is currently being stored locally as terraform.tfstate.
@@ -93,8 +93,10 @@ run the terraform script again via `
 
 ``Once you get the expected outcome of terraform plan , you are good to execute terraform apply. Later on, you can go to AWS VPC, EC2, and respective services dashboards to verify the changes. Finally, once you hit the AWS-generated load balancer hostname URL, you should be able to view the Nginx homepage.``
 
+`` for more details use this link ;-
+https://aws.plainenglish.io/provisioning-aws-infrastructure-using-terraform-vpc-private-subnet-alb-asg-118b82c585f2``
 
-
+`Happy Terraform-ing!`
 
 
 
