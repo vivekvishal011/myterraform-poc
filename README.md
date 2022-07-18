@@ -1,5 +1,9 @@
 # myterraform-poc
 
+`#task == Create a custom VPC, subnet, route table, sg, internet gateway, eip.`
+         `create ALB, autoscaling.`
+         `create elastic cache, rds, kms, sns, kms, s3 backend to store terraform state file.`
+
 `` Terraform snippet for deploying ASG in private subnet behind ALB ``
 Below is the architecture to be implemented:
 ![image](https://user-images.githubusercontent.com/88605079/178881982-87533c6d-96b3-4f79-9b3e-12f835ad5135.png)
@@ -17,6 +21,13 @@ d)  init_webserver.sh: User data script for launch config which installs & start
 3. Terraform & AWS CLI configured on machine from which the scripts are to be run `
 (to install the terraform on our server for detail use this link:-
 https://www.terraform.io/downloads)
+
+`main.tf`
+ `In the main.tf file, it contains configuration of :--`
+ `1.>> Create a custom VPC, subnet, route table, sg, internet gateway, eip.`
+   `2.>> create ALB, autoscaling.` 
+ 
+ and the variable that is used in main.tf is taken from variables.tf and config of varible are there.
 
 ` state.tf `
 We'll create all of the necessary resources without declaring the S3 backend. The order of the following list of resources to be created is not important.:
