@@ -24,10 +24,45 @@ https://www.terraform.io/downloads)
 
 `main.tf`
  `In the main.tf file, it contains configuration of :--`
- `1.>> Create a custom VPC, subnet, route table, sg, internet gateway, eip.`
-   `2.>> create ALB, autoscaling.` 
+ `1.>> Create a custom VPC,
  
- and the variable that is used in main.tf is taken from variables.tf and config of varible are there.
+ <img width="1186" alt="Screenshot 2022-07-20 at 4 54 21 PM" src="https://user-images.githubusercontent.com/88605079/179970637-7db8511a-09ea-4a6c-a886-a10d9d89cf9c.png">
+ 
+ 
+``for subnet,``
+``1..> for public which contains nat-gateway``
+<img width="1223" alt="Screenshot 2022-07-20 at 4 58 12 PM" src="https://user-images.githubusercontent.com/88605079/179971163-6a959fe7-1cfd-420b-871d-c9c1b4ad03b5.png">
+``2..>for private subnets which contains ec2 and alb``
+
+<img width="1191" alt="Screenshot 2022-07-20 at 5 02 31 PM" src="https://user-images.githubusercontent.com/88605079/179971819-3c1e2b0a-816d-463d-841c-e699801a719d.png">
+
+``for route table and its associatios with subnets``
+
+<img width="1190" alt="Screenshot 2022-07-20 at 5 04 50 PM" src="https://user-images.githubusercontent.com/88605079/179972368-14c24535-fdc8-445b-a461-9c6d0c956901.png">
+
+``for security group,``
+<img width="1203" alt="Screenshot 2022-07-20 at 5 07 55 PM" src="https://user-images.githubusercontent.com/88605079/179972914-7eaa1c98-882a-43ee-8907-d2654dbad238.png">
+<img width="1129" alt="Screenshot 2022-07-20 at 5 08 19 PM" src="https://user-images.githubusercontent.com/88605079/179972958-67bb2158-77fa-49b8-bc2d-f16674d4fb68.png">
+
+
+`` for internet gateway,``
+<img width="1143" alt="Screenshot 2022-07-20 at 5 10 26 PM" src="https://user-images.githubusercontent.com/88605079/179973298-0a74fbf3-fcd8-4209-8895-1c032b783985.png">
+
+``for eip.``
+`i have created the eip and attached it to nat-gateway`
+<img width="1218" alt="Screenshot 2022-07-20 at 5 11 57 PM" src="https://user-images.githubusercontent.com/88605079/179973810-70459e51-5d53-4f19-95a0-3f55b6f0fba4.png">
+
+   ``2.>> create ALB``
+   
+   <img width="1222" alt="Screenshot 2022-07-20 at 5 14 35 PM" src="https://user-images.githubusercontent.com/88605079/179974153-fdacb4f2-072a-47a7-a07f-d9b7850b8376.png">
+
+   
+  ``for - autoscaling.``
+  <img width="1254" alt="Screenshot 2022-07-20 at 5 17 02 PM" src="https://user-images.githubusercontent.com/88605079/179974626-e171d99f-038f-47b3-aaf7-dc77453e0a49.png">
+<img width="1216" alt="Screenshot 2022-07-20 at 5 17 24 PM" src="https://user-images.githubusercontent.com/88605079/179974669-ea29ec05-1b8c-4547-b173-bdecaedab86b.png">
+
+ 
+`` and the variable that is used in main.tf {that is in the above pic are taken and stored in the variables.tf} taken from variables.tf and config of varible are there``
 
 ` state.tf `
 We'll create all of the necessary resources without declaring the S3 backend. The order of the following list of resources to be created is not important.:
