@@ -30,9 +30,9 @@ https://www.terraform.io/downloads)
  
  
 ``for subnet,``
-``1..> for public which contains nat-gateway``
+`` which contains nat-gateway``
 <img width="1223" alt="Screenshot 2022-07-20 at 4 58 12 PM" src="https://user-images.githubusercontent.com/88605079/179971163-6a959fe7-1cfd-420b-871d-c9c1b4ad03b5.png">
-``2..>for private subnets which contains ec2 and alb``
+``2..>for private subnets which contains ec2 and asg``
 
 <img width="1191" alt="Screenshot 2022-07-20 at 5 02 31 PM" src="https://user-images.githubusercontent.com/88605079/179971819-3c1e2b0a-816d-463d-841c-e699801a719d.png">
 
